@@ -1,0 +1,102 @@
+/* 
+    Document   : Style
+    Created on : 16.09.2010, 17:54:42
+    Author     : Frederik Kerger
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+	background:url(../images/bg.png);
+}
+
+#container {
+	margin-left:-8px;
+	min-height:1000px;
+	padding:0;
+	width:960px;
+}
+
+#header {
+	margin-bottom:100px;
+}
+
+#content {
+	position:absolute;
+	background:url(../images/content_bg.png) no-repeat;
+	min-width:960px;
+	min-height:1100px;
+	margin-bottom:200px;
+}
+
+#nav {
+	z-index:1;
+	position:absolute;
+	top:100px;
+	left:50px;
+	background:url(../images/nav.png);
+	width:260px;
+	height:280px;	
+}
+
+#home {
+	z-index:2;
+	position:absolute;
+	top:30px;
+	left:20px;
+	list-style-type:none;
+}
+
+#tote {
+	z-index:2;
+	position:absolute;
+	top:65px;
+	left:25px;
+	list-style-type:none;
+}
+#beitrag {
+	padding:80px;
+	z-index:2;
+	position:absolute;
+	left:230px;
+	top:120px;
+	background:url(../images/beitrag_bg.png) no-repeat;
+	width:100%;
+	height:815px;
+}
+
+.box_small {
+width:438px;
+}
+
+.box_headline {
+border-bottom:2px solid #333333;
+color:#999999;
+font-size:20px;
+}
+
+#footer {
+	margin-top:100px;
+	margin-left:15px;
+	margin-bottom:-8px;
+	background:url(../images/footer.png);
+	width:711px;
+	height:165px;
+}
+
+#new_tote {
+	margin-left:50px;
+}
+
+a img {
+border : 0 none;
+}
