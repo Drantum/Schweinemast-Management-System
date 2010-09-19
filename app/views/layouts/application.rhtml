@@ -14,7 +14,7 @@
     <div id="content">
       <div id="nav">
         <li id="home"><%= link_to image_tag("nav_home.png"), root_url %></li>
-        <li id="tote"><%# link_to link_to image_tag("nav_tote.png"), {:controller => 'home', :action => 'tote'} %></li>
+        <li id="tote"><%= link_to link_to image_tag("nav_tote.png"), {:controller => 'home', :action => 'tote'} %></li>
       </div>
       <div id="beitrag">
  <%=yield :layout%>

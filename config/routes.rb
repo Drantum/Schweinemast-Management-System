@@ -1,4 +1,6 @@
 SchweinemastManagementSystem::Application.routes.draw do
+  resources :deads
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,31 @@
+<h1>Listing deads</h1>
+
+<table  width="50%" border="0" cellspacing="2" cellpadding="1" align="left" class="poll">
+  <tr>
+    <th>Datum</th>
+    <th>Ohrmarken-Nr.</th>
+    <th>Abteil</th>
+    <th>Gewicht</th>
+    <th>Grund</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @deads.each do |dead| %>
+  <tr>
+    <td><%= dead.datum %></td>
+    <td><%= dead.nummer %></td>
+    <td><%= dead.abteil %></td>
+    <td><%= dead.gewicht %></td>
+    <td><%= dead.grund %></td>
+    <td><%= link_to 'Show', dead %></td>
+    <td><%= link_to 'Edit', edit_dead_path(dead) %></td>
+    <td><%= link_to 'Destroy', dead, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<%= link_to 'New Dead', new_dead_path %>

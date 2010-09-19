@@ -1,0 +1,37 @@
+<%= form_for(@dead) do |f| %>
+  <% if @dead.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dead.errors.count, "error") %> prohibited this dead from being saved:</h2>
+
+      <ul>
+      <% @dead.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :datum %><br />
+    <%= f.date_select :datum %>
+  </div>
+  <div class="field">
+    <%= f.label "Ohrmarken-Nr." %><br />
+    <%= f.text_field :nummer %>
+  </div>
+  <div class="field">
+    <%= f.label :abteil %><br />
+    <%= f.text_field :abteil %>
+  </div>
+  <div class="field">
+    <%= f.label :gewicht %><br />
+    <%= f.text_field :gewicht %>
+  </div>
+  <div class="field">
+    <%= f.label :grund %><br />
+    <%= f.text_field :grund %>
+  </div><br />
+  <div class="actions">
+    <%= f.submit "Speichern" %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  datum: 2010-09-19
+  nummer: 1
+  abteil: 1
+  gewicht: 1
+  grund: MyString
+
+two:
+  datum: 2010-09-19
+  nummer: 1
+  abteil: 1
+  gewicht: 1
+  grund: MyString
