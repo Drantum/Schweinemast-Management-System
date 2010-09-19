@@ -2,12 +2,11 @@
     Document   : Style
     Created on : 16.09.2010, 17:54:42
     Author     : Frederik Kerger
-    Description:
-        Purpose of the stylesheet follows.
+    Description: Stylesheet for the Schweinemast-Management-System
 */
 
 /* 
-   TODO customize this sample style
+   TODO: font and other thinks
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
@@ -75,13 +74,13 @@ body {
 }
 
 .box_small {
-width:438px;
+	width:438px;
 }
 
 .box_headline {
-border-bottom:2px solid #333333;
-color:#999999;
-font-size:20px;
+	border-bottom:2px solid #333333;
+	color:#999999;
+	font-size:20px;
 }
 
 #footer {
@@ -98,5 +97,18 @@ font-size:20px;
 }
 
 a img {
-border : 0 none;
+	border : 0 none;
 }
+
+.current {  
+	padding-right: 18px;  
+    background-repeat: no-repeat;  
+    background-position: right center;  
+}  
+.asc {   
+    background-image: url(/images/up_arrow.png);   
+}  
+   
+.desc {   
+    background-image: url(/images/down_arrow.png);   
+} 

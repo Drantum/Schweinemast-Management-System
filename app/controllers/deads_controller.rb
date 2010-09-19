@@ -1,8 +1,10 @@
 class DeadsController < ApplicationController
+	helper_method :sort_column, :sort_direction
+
   # GET /deads
   # GET /deads.xml
   def index
-    @deads = Dead.all
+    @deads = Dead.order(sort_column + ' ' + sort_direction) 
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,4 +82,13 @@ class DeadsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+   private  
+   def sort_column  
+      Dead.column_names.include?(params[:sort]) ? params[:sort] : "datum"  
+   end   
+     
+   def sort_direction  
+      %w[asc desc].include?(params[:direction]) ?  params[:direction] : "asc"  
+   end  
 end

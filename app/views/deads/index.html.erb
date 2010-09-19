@@ -2,17 +2,17 @@
 
 <table  width="50%" border="0" cellspacing="2" cellpadding="1" align="left" class="poll">
   <tr>
-    <th>Datum</th>
-    <th>Ohrmarken-Nr.</th>
-    <th>Abteil</th>
-    <th>Gewicht</th>
-    <th>Grund</th>
+    <th><%= sortable "datum" %></th>
+    <th><%= sortable "nummer", "Ohrmarken-Nr." %></th>
+    <th><%= sortable "abteil" %></th>
+    <th><%= sortable "gewicht" %></th>
+    <th><%= sortable "grund" %></th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
-<% @deads.each do |dead| %>
+<% for dead in @deads %>
   <tr>
     <td><%= dead.datum %></td>
     <td><%= dead.nummer %></td>
